@@ -1,0 +1,681 @@
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets/img/favicon/" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Reims Quiz</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav id="bg-warning" class="navbar sticky-top">
+        <div class="container-fluid" id="contain">
+            <a class="navbar-brand" id="size-navbar-brand" href="#">
+                <img src="assets\img\logo.png" alt="" width="40" height="30"
+
+    
+
+                    class="d-inline-block align-text-top">
+               <span class=" fw-bold text-white mt-3 ">Reims Quiz</span> 
+            </a>
+            <div class="btn-nav">
+                <a href="#" class="btn1 btn btn-light text-black-50 shadow">Retour</a>
+                <a href="#carousel" class="btn2 btn btn-light text-black-50 shadow">Crédits</a>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- main accueil -->
+    <div class="card card-index">
+        <div class="card-body card-index">
+            <h2 class="btn-warning text-black-50 fw-bold" id="">Reims Quiz</h2>
+            <p>Bienvenue sur ce questionnaire à propos de la ville de Reims</p>
+            <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
+            <a href="#q-one" onclick="resultOne(1)" class="btn blue text-white w-75 fw-bolder">Jouer</a>
+        </div>
+    </div>
+    <!-- END MAIN -->
+
+<!-- survey -->
+<main class="survey">
+
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Combien y a-t-il d'habitant dans la cité des sacres ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">125 000</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">150 000</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">175 000</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">185 000</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">185 000 !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">C'est dans les années 50 à 70 que la ville de Reims passa de 130 000 à 180 000 habitants cette forte croissance est dû à je sais pas quoi. Après cette période la population resta pratiquement la même, et n'augmenta que de 5 000 habitants en une cinquantaine d'années.                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://cdn-s-www.ledauphine.com/images/9105E7BE-9802-4278-B562-A660EC1D88AE/NW_raw/photo-adobe-stock-1578064081.jpg" alt="Groupe de personne">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quel était le nom de la ville de Reims à l'époque Gallo Romaine ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Rodium</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Durocortorum</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Camaracum</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Reimzorum</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">Durocortorum !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">Selon la légende, Reims fut créée par Remus, le frère du fondateur de la Rome antique. Le peuple celte qui habitait la région aurait pris de ce fait le nom de Rèmes.
+        Après la conquête romaine, Reims baptisée alors Durocortorum est intégrée à la province de Belgique et en devient la capitale.
+        À son apogée, avec ses 30 000 habitants, la cité gallo-romaine était devenue l’une des plus peuplées au nord des Alpes.                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://www.reims.fr/fileadmin/_processed_/c/3/csm_Plan_gallo-romain_de_Reims__Durocortorum__738964cb9d.jpg" alt="Durocortorum reconstitution">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Comment se nomme cette grande Porte ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Porte de Paris</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Porte la Liberté</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Porte de Mars</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Porte de Vénus</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">Porte de Mars !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">La Porte de Mars est la seule des quatre portes permettant l'accès à la ville antique encore
+        visible aujourd'hui. Elle a été construite au 3 ème siècle.                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="ttps://upload.wikimedia.org/wikipedia/commons/9/98/Porte_Mars_01.jpg" alt="Porte de Mars">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quand est-ce que la première pierre de la cathédrale de Reims fut posée ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">956</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">1001</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">1212</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">1384</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">1212 !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">Notre-Dame de Reims est l’une des réalisations majeures de l’art gothique en Europe.
+        Inscrite sur la Liste du patrimoine mondial de l’UNESCO, cette cathédrale du XIIIe siècle présente des traits qui la rendent unique, notamment par son unité de style, sa luminosité et sa statuaire.
+        Fortement endommagée pendant la première guerre mondiale, elle comporte une prouesse architecturale du XXe siècle :
+        une charpente en béton armé élaborée par l'architecte Henri Deneux, ainsi qu'un riche ensemble de vitraux contemporains dont certains contemporains dessinés par Marc Chagall (1974) et Imi Knoebel (2011 et 2015).                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://images.france.fr/zeaejvyq9bhj/3I6KpOJXfaq4GGAOgEoEOK/2085fcaae0d9d1c78d491c6852132057/cathedrale_notre-dame_de_reims-r_christian_lantenois.jpg" alt="Cathédrale de Reims">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Combien de roi de France ont été sacré à la catédrale de Reims ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">4</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">8</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">23</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">31</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">31 !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">À partir du XIe siècle, presque tous les rois de France se sont fait sacrer à Reims, jusqu’à Charles X en 1825.                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://cdn.radiofrance.fr/s3/cruiser-production/2017/12/80e40d42-a209-4cfd-8784-49989fc37b96/870x489_louis_xv_sacre.jpg" alt="Sacrement">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Comment se nomme cette grande place ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Place Drouet d'Erlon</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Place Ducale</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Place Royale</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Place du Forum</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">Place Drouet d'Erlon !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">La Place Drouet-d'Erlon au centre de Reims, est le plus souvent noir de monde, à l'heure du déjeuner, notamment.
+        Avec ses 20.000 m2, les terrasses, au fil du temps s'y sont multipliées. Elles y occupent aujourd'hui 3.710 m2, ce qui en fait en quelque sorte, la plus grande terrasse de France.                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg" alt="Place d'Erlon">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Où ont été signés les actes de capitulation du Troisième Reich à Reims ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Sur le canal de la Marne</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Devant la cathédrale de Reims</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Dans la mairie de reims</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Dans une salle du collège technique de Reims</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">Dans une salle du collège technique de Reims !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">Vous pouvez vous rendre au musée de la Reddition situé dans une partie des locaux du lycée Franklin-Roosevelt à Reims où eut lieu ce tournant de l'histoire                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://cdt51.media.tourinsoft.eu/upload/Reddition-01-cyrille-beudot.jpg" alt="Musée de la Rédition">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quel est le nom de cette statue ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">L'ange au sourire</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">L'ange gardien</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">l'ange souriant</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">L'ange de la cathédrale</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">L'ange au sourire !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">Le sourire énigmatique de cet ange devient pendant la première guerre mondiale le symbole de la cathédrale martyre, puis rapidement le symbole de la ville de Reims. 
+        Il porte depuis le nom d’Ange au sourire.                         </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://lh3.googleusercontent.com/proxy/yfvWr1XNMqBKY3Eg7fWeaXHAPcLAWu3BtFTL9Q8ybVRe56aCEUj5SwX3JwkSIBOdznjY-R5vpre1GEP7muhOr3aoIjT9wvKe7RFZhOmur-PGwzu6lioKLP3a5MoXs4gjO6Ai" alt="ange au sourire">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Comment appelle-t-on les habitants de Reims ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Les reimsois</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Les rémois</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Les rétiriens</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Les rémolois</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">Les rémois !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">Les rémois sont également surnomés les cornichons. C’est un clin d’œil à Reims, l’Histoire raconte que lors de la Révolution Française, les Rémois siégeant à l’Assemblée Nationale étaient assis sur la corniche des fenêtres, d’où le surnom des Cornichons !                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="https://remeng.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2020/11/15/node_207133/12160044/public/2020/11/15/B9725250910Z.1_20201115172708_000%2BGSDH2KQTJ.1-0.jpg?itok=2GBNMEpP1605462660" alt="Reims en big lettres">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+                <!-- Question one -->
+            <div>
+                <section id="q-one"
+                    class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+
+                    <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">Quel est la première maison de Champagne de Reims ?</h1>
+                    <div class=" btn-group-vertical height w-50">
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">Champagne Mum</label>
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">Champagne Pommery</label>
+
+
+                        <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                        <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">Champagne Moet et Chandon </label>
+
+                        <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">Champagne Ruinard</label>
+
+                        <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                    </div>
+                </section>
+
+                <section id="a-one"
+                    class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                    <div id="bg-test" class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                        <br>
+                        <p id="resultat1" class=></p>
+
+                        <p>La bonne réponse est :</p>
+                        <h1 class="mb-3 fst-italic">Champagne Ruinard !</h1>
+                        <p class="toKnow w-75 text-break m-auto shadow  border-light  ">Champagne Ruinart est une maison de Champagne fondée en 1729 par Nicolas Ruinart, le neveu du moine bénédictin Dom Thierry Ruinart.
+        À Reims, les visites de caves des plus grandes maisons de champagne font partie des incontournables.                        </p>
+                        <br>
+                    </div>
+                    <img class="shadow" src="Quel est la première maison de Champagne de Reims ?" alt="Maison ruinard">
+                    <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                        class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+                </section>
+            </div>
+            
+    <div>
+        <section id="q-two"
+            class="no-scroll question three d-flex justify-content-center align-items-center flex-column text-center">
+            <div class="dot bg shadow mt-2 fw-bold">
+                <p class="margintop" id="questionnumber2"></p>
+            </div>
+            <h1 id="bg-warning" class="question-title p-4 bg-warning border  w-75  text-white shadow">Comment se nomme
+                cette porte ? </h1>
+            <img class="shadow pt-2"
+                src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg" width="250px"
+                height="250px">
+
+            <div class="debug btn-group-vertical pt-4 ">
+                <div>
+                    <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-a">Porte de
+                        Paris</label>
+
+                    <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-b">Porte de
+                        Terre</label>
+                </div>
+
+                <div>
+                    <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-c">Porte de Mars</label>
+
+                    <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-d">Porte de Sack</label>
+                </div>
+                <a href="#a-two" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+            </div>
+        </section>
+
+
+
+        <!-- END SURVEY -->
+
+
+        <!-- START resultat -->
+
+      
+        <section id="result" class="result d-flex justify-content-center align-items-center vh-100  shadow-sm p-3 rounded flex-column">
+            <h1>Résultat</h1>
+            <p>Bravo tu as obtenu</p>
+            <p id="resultat"></p>
+            <p>bonnes réponses !</p>
+            <div class="inline p-md-2">
+            <a href="https://twitter.com/intent/tweet?button_hashtag=ReimsQuiz&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="true">ReimsQuiz</a>
+        </section>
+    </main>
+    <!-- END resultat -->
+    <!-- START CAROUSEL-->
+    <section id="carousel">
+
+
+        <div id="carouselExampleControls " class="carousel slide container-fluid" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                
+                <div class="carousel-item active" id="carousel">
+                    <!-- card origin-->
+                    <div class="d-block">
+                        <img src="assets/img/carousel/Grobin-min.JPG" class="card-img-top" alt="Robin Jonval">
+                        <div class="card-body">
+                            <h5 class="card-title">Robin Jonval</h5>
+                            <p class="card-text">Mail pro : jonval.robin@gmail.com <br>
+                                Tél Pro : 07.49.38.42.38</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+                    <div class="d-block ">
+                        <img src="assets/img/carousel/Neo-min.JPG" class="card-img-top" alt="Marvin Crepin">
+                        <div class="card-body">
+                            <h5 class="card-title">Marvin Crepin</h5>
+                            <p class="card-text">Mail pro : marvincrepin@gmail.com <br>
+                                Tél Pro : 06.17.87.71.13</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+                    <div class="d-block ">
+                        <img src="assets/img/carousel/Mauricia-min.JPG" class="card-img-top" alt="Rimie Mauricia Nkou">
+                        <div class="card-body">
+                            <h5 class="card-title">Rimie Mauricia Nkou</h5>
+                            <p class="card-text">Mail pro : rimie.nkou.20@neoma-bs.com <br>
+                                Tél Pro : 06.67.52.74.31</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+                    <div class="d-block ">
+                        <img src="assets/img/carousel/Luis-min.JPG" class="card-img-top" alt="Luis Sousa">
+                        <div class="card-body">
+                            <h5 class="card-title">Luis Sousa</h5>
+                            <p class="card-text">Mail pro : luis.sousa89360@gmail.com <br>
+                                Tél Pro : 07.83.18.35.57</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+                    <div class="d-block ">
+                        <img src="assets/img/carousel/Corentin-min.JPG" class="card-img-top" alt="Corentin Chalons">
+                        <div class="card-body">
+                            <h5 class="card-title">Corentin Chalons</h5>
+                            <p class="card-text">Mail Pro : chalons.corentin@gmail.com <br>
+                                Tél Pro : 06.21.10.25.97</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+
+                    <!-- card avec class origin + img carousel -->
+                    <div class="d-block ">
+                        <img src="assets/img/carousel/clement-1000_1500.png" class="card-img-top" alt="Clément Moreaux">
+                        <div class="card-body">
+                            <h5 class="card-title">Clément Moreaux</h5>
+                            <p class="card-text">Mail pro : clement.moreaux.20@noema-bs.com <br>
+                                Tél Pro : 07.83.35.56.68</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- END CAROUSEL-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>
+

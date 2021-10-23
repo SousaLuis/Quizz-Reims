@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="assets\img\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Reims Quiz</title>
+</head>
+
+<body>
+
+    <!-- navbar -->
+    <nav id="bg-warning" class="navbar sticky-top">
+        <div class="container-fluid" id="contain">
+            <a class="navbar-brand" id="size-navbar-brand" href="#">
+                <img src="assets\img\logo.png" alt="" width="40" height="30" class="d-inline-block align-text-top">
+                <span class=" fw-bold text-white mt-3 ">Reims Quiz</span>
+            </a>
+            <div class="btn-nav">
+                <a href="#" class="btn-hover btn btn-light text-50 shadow">Retour</a>
+                <a href="#carousel" class="btn-hover btn btn-light text-50 shadow">Crédits</a>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+    <!-- main accueil -->
+    <div class="card card-index">
+        <div class="card-body card-index hand-border">
+            <h2 class="btn-warning text-black-50 fw-bold" id="">Reims Quiz</h2>
+            <p>Bienvenue sur ce questionnaire à propos de la ville de Reims</p>
+            <p class="card-text">Le temps estimé est de 5 minutes, bonne chance !</p>
+            <a href="#q-one" onclick="resultOne(1)" class="btn3 btn blue text-white w-75 fw-bolder">Jouer</a>
+        </div>
+    </div>
+    <!-- END MAIN -->
+
+    <!-- survey -->
+    <main class="survey">
+
+        <!-- Question one -->
+        <div>
+            <section id="q-one"
+                class="no-scroll question one d-flex justify-content-center align-items-center flex-column text-center vh-100">
+                <div class="">
+                    <div class="dot bg shadow mt-2 fw-bold">
+                        <p class="margintop" id="questionnumber1"></p>
+                    </div>
+                </div>
+                <h1 id="bg-warning" class="question-title p-6 bg-warning border w-75 mb-5 text-white shadow">La
+                    Population de la Ville ? </h1>
+                <div class=" btn-group-vertical height w-50">
+                    <input class="btn-check" type="radio" name="question1" value="0" id="Q1-a">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-a">125 000</label>
+
+                    <input class="btn-check" type="radio" name="question1" value="0" id="Q1-b">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-b">150 000</label>
+
+
+                    <input class="btn-check" type="radio" name="question1" value="0" id="Q1-c">
+                    <label class=" btn btn-outline-warning text-black-50 fw-bold shadow " for="Q1-c">175 000</label>
+
+                    <input class="btn-check" type="radio" name="question1" value="correct" id="Q1-d">
+                    <label class="btn btn-outline-warning text-black-50 fw-bold shadow  " for="Q1-d">185 000</label>
+
+                    <a href="#a-one" onclick="resultOne(1)" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+
+                </div>
+            </section>
+            <div class="">
+
+            </div>
+
+            <section id="a-one"
+                class="no-scroll answer one d-flex justify-content-center align-items-center flex-column text-center vh-100 ">
+
+                <div id="bg-test"
+                    class="answer-title bg-warning w-75 shadow mt-4 text-white fw-bold mb-3 rounded shadow">
+                    <br>
+                    <p id="resultat1" class=></p>
+
+                    <p>La bonne réponse est :</p>
+                    <h1 class="mb-3 fst-italic">185 000 !</h1>
+                    <p class="toKnow w-75 text-break m-auto shadow  border-light  ">
+                        C'est dans les années 50 à 70 que la ville de Reims passa de 130 000 à 180 000 habitants cette
+                        forte croissance est dû à je sais pas quoi.
+                    </p>
+                    <br>
+                </div>
+                <img class="shadow" src="https://picsum.photos/seed/picsum/200/300" alt="">
+                <a href="#q-two" onclick="resultOne(2)" id="bg-warning"
+                    class="btn button-width mt-3 shadow text-white fw-bold shadow">Suivant</a>
+            </section>
+        </div>
+        <div>
+            <section id="q-two"
+                class="no-scroll question three d-flex justify-content-center align-items-center flex-column text-center">
+                <div class="dot bg shadow mt-2 fw-bold">
+                    <p class="margintop" id="questionnumber2"></p>
+                </div>
+                <h1 id="bg-warning" class="question-title p-4 bg-warning border  w-75  text-white shadow">Comment se
+                    nomme cette porte ? </h1>
+                <img class="shadow pt-2"
+                    src="https://cdt51.media.tourinsoft.eu/upload/Place-d-Erlon-Reims-----Pauline-Colin.jpg"
+                    width="250px" height="250px">
+
+                <div class="debug btn-group-vertical pt-4 ">
+                    <div>
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-a">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-a">Porte de
+                            Paris</label>
+
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-b">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-b">Porte de
+                            Terre</label>
+                    </div>
+
+                    <div>
+                        <input class="btn-check" type="radio" name="question3" value="correct" id="Q3-c">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-c">Porte de
+                            Mars</label>
+
+                        <input class="btn-check" type="radio" name="question3" value="0" id="Q3-d">
+                        <label class="btn btn-outline-warning text-black-50 fw-bold shadow" for="Q3-d">Porte de
+                            Sack</label>
+                    </div>
+                    <a href="#a-two" class="btn blue shadow text-white heightqt mt-3">Réponse</a>
+                </div>
+            </section>
+
+
+
+            <!-- END SURVEY -->
+
+
+            <!-- START resultat -->
+
+
+            <section id="result"
+                class="result d-flex justify-content-center align-items-center vh-100  shadow-sm p-3 rounded flex-column">
+                <h1>Résultat</h1>
+                <p>Bravo tu as obtenu</p>
+                <p id="resultat"></p>
+                <p>bonnes réponses !</p>
+                <div class="inline p-md-2">
+                    <a href="https://twitter.com/intent/tweet?button_hashtag=ReimsQuiz&ref_src=twsrc%5Etfw"
+                        class="twitter-hashtag-button" data-show-count="true">ReimsQuiz</a>
+            </section>
+    </main>
+    <!-- END resultat -->
+    <!-- START CAROUSEL-->
+    <section id="carousel">
+
+        <div id="carouselExampleControls" class="carousel slide container-fluid carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+
+                <div class="carousel-item active">
+                    <!-- card origin-->
+                    <div class="d-block">
+                        <img src="assets/img/carousel/Grobin-min.jpg" class="card-img-top" alt="Robin Jonval">
+                        <div class="card-body">
+                            <h5 class="card-title">Robin Jonval</h5>
+                            <p class="card-text">Mail pro : jonval.robin@gmail.com <br>
+                                Tél Pro : 07.49.38.42.38</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+                    <div class="d-block">
+                        <img src="assets/img/carousel/Neo-min.jpg" class="card-img-top" alt="Marvin Crepin">
+                        <div class="card-body">
+                            <h5 class="card-title">Marvin Crepin</h5>
+                            <p class="card-text">Mail pro : marvincrepin@gmail.com <br>
+                                Tél Pro : 06.17.87.71.13</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+                    <div class="d-block">
+                        <img src="assets/img/carousel/Mauricia-min.jpg" class="card-img-top" alt="Rimie Mauricia Nkou">
+                        <div class="card-body">
+                            <h5 class="card-title">Rimie Mauricia Nkou</h5>
+                            <p class="card-text">Mail pro : rimie.nkou.20@neoma-bs.com <br>
+                                Tél Pro : 06.67.52.74.31</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+
+                    <div class="d-block">
+                        <img src="assets/img/carousel/Luis-min.jpg" class="card-img-top" alt="Luis Sousa">
+                        <div class="card-body">
+                            <h5 class="card-title">Luis Sousa</h5>
+                            <p class="card-text">Mail pro : luis.sousa89360@gmail.com <br>
+                                Tél Pro : 07.83.18.35.57</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item">
+                    <!-- card class de l'image du carousel -->
+                    <div class="d-block">
+                        <img src="assets/img/carousel/Corentin-min.jpg" class="card-img-top" alt="Corentin Chalons">
+                        <div class="card-body">
+                            <h5 class="card-title">Corentin Chalons</h5>
+                            <p class="card-text">Mail Pro : chalons.corentin@gmail.com <br>
+                                Tél Pro : 06.21.10.25.97</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+
+                    <!-- card avec class origin + img carousel -->
+                    <div class="d-block">
+                        <img src="assets/img/carousel/Clément-min.jpg" class="card-img-top" alt="Clément Moreaux">
+                        <div class="card-body">
+                            <h5 class="card-title">Clément Moreaux</h5>
+                            <p class="card-text">Mail pro : clement.moreaux.20@noema-bs.com <br>
+                                Tél Pro : 07.83.35.56.68</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- END CAROUSEL-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+
+</html>

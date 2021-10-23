@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #EDA51F;
+    --secondary-color: #E40019;
+    --third-color: #FFF; 
+    --light: rgba(250, 245, 242, 0.938);
+    --dark: #14030d;
+    --spacing: 8px;
+    --spacing-2: calc(var(--spacing) * 2);
+    --spacing-4: calc(var(--spacing) * 4);
+    --main-font: arial;
+    --title-font: impact;
+    --text-font-size: 16pt;
+    --title-font-size: 24pt;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+/* *************** NAVBAR *************** */
+
+
+.btn-hover:hover {
+    color: var(--main-color);
+}
+
+/* *************** MAIN / ACCUEIL *************** */
+
+.d-flex {
+    display: flex;
+}
+
+.card-index {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 0;
+}
+
+.button-width {
+    width: 15rem;
+    background-color: #EE2122;
+    border: white 1px;
+}
+
+/* *************** SURVEY *************** */
+
+.no-scroll {
+    background-color: whitesmoke;
+}
+
+/* .no-scroll>h1{background-color: red;}
+.debug{background-color: blue;} */
+
+.question-title {
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.no-scroll {
+    height: 100vh;
+}
+
+.card, .card-body {
+    background-color: var(--third-color);
+}
+
+.card-body {
+    color:black;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.button-width {
+    width: 15rem;
+    background-color: var(--secondary-color);
+    border: white 1px;
+}
+/* *************** RESULT *************** */
+
+.result {
+    height: calc(93.5vh - 20vh);
+    background-color: whitesmoke;
+}
+
+/* *************** CREDITS *************** */
+
+.card-img-top {
+    max-width: 100vw;
+}
+
+.carousel-item{
+    text-align: center;
+}
+
+
+.d-block .card-img-top{
+    height: 85vh;
+}
+
+.d-block .card-body{
+    height: 15vh;
+} */
+
+.carousel-control-prev .carousel-control-next {
+    display: hidden;
+}
+#carousel {
+    height: 100vh;
+}
+.carousel-item {
+    height: 80%;
+    text-align: center;
+    margin-top: 6.5vh;
+}
+.card-img-top {
+    max-height: 75vh;
+    width: auto;
+}
+
+
+/* X-Small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up)  */
+
+@media (min-width: 576px) {
+    /* *************** NAVBAR *************** */
+    
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+
+    /* *************** CREDITS *************** */
+    .shadows {
+        padding: 1rem;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    /* *************** NAVBAR *************** */
+    .hand-border {
+        border: 1px solid var(--main-color);
+    }
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
+}
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    /* *************** NAVBAR *************** */
+    .hand-border {
+        padding: 10rem;
+    }
+   
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    /* *************** NAVBAR *************** */
+    .hand-border {
+        padding: 15rem;
+    }
+    
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
+    
+    .card-img-top{
+        width: auto;
+        margin: 0;
+    }
+
+    div .card-body{
+        margin: 0;
+    }
+
+    .carousel-control-prev .carousel-control-next{
+        visibility: visible;
+    }
+
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+
+@media (min-width: 1400px) {
+    /* *************** NAVBAR *************** */
+    /* *************** MAIN / ACCUEIL *************** */
+    /* *************** SURVEY *************** */
+    /* *************** CREDITS *************** */
+}
+
+input, label {
+   margin-bottom: 1rem;
+}
+
+.height {
+    height: 33%;
+}
+
+
+
+#bg-warning {
+    background-color: var(--main-color) !important;
+}
+
+#bg-test {
+    background-color: #006393 !important;
+}
+.dot {
+    height: 50px;
+    width: 50px;
+    background-color: #006393 !important;
+    color: whitesmoke;
+    border-radius: 50%;
+    display: inline-block;
+    
+  }
+  
+.margintop {
+    margin-top: 0.8rem;
+}
+
+.red {
+    color: #FF8484;
+}
+
+.green {
+    color:#1A936F;
+}
+
+.blue {
+    background-color: #006393 !important;
+
+}
